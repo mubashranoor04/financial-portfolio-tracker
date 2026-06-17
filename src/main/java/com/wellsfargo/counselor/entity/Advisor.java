@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 public class Advisor {
 
     @Id
-    @GeneratedValue()
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long advisorId;
 
     @Column(nullable = false)
